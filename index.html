@@ -10,6 +10,9 @@
 
   <title>Bulawayo Python</title>
 
+  <!-- Animation CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
    
@@ -30,18 +33,18 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home
+            <a class="nav-link text-white" href="#">Home
               <span class="sr-only">(current)</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About Us</a>
+            <a class="nav-link text-white" href="#About">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Projects</a>
+            <a class="nav-link text-white" href="#">Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact Us</a>
+            <a class="nav-link text-white" href="#">Contact Us</a>
           </li>
         </ul>
       </div>
@@ -49,14 +52,17 @@
   </nav>
 
   <!-- Header - set the background image for the header in the line below -->
-  <header class="py-5 bg-image-full">
-    <img class="img-fluid d-block mx-auto logo" src="./img/logo.png" alt="">
-  </header>
+ 
+    <header class="py-5 bg-image-full" style="height: 55vh;">
+      <img class="img-fluid d-block mx-auto logo animated pulse infinite delay-7s" src="./img/logo.png" alt="">
+    </header>
+
+  
 
   <!-- Content section -->
-  <section class="py-5  content-sec">
+  <section id="About" class="py-5  content-sec">
     <div class="container">
-      <h1>About</h1>
+      <h1 class="animated bounce delay-7s">About</h1>
       <p class="lead">Bringing Python to the community.</p>
       <p>
         Python Bulawayo is a Community that seeks to empower aspiring developers in Bulawayo and expose them to opportunities out there!
@@ -65,9 +71,13 @@
   </section>
 
   <!-- Image Section - set the background image for the header in the line below -->
-  <section class="py-5 bg-image-full" style="background-image: url('./img/1.jpg');">
+  <section class="py-5 bg-image-full" style="background-image: url('./img/1.jpg');background-attachment: fixed;">
     <!-- Put anything you want here! There is just a spacer below for demo purposes! -->
-    <div style="height: 200px; " ></div>
+    <div style="height: 200px; " >
+
+      <h1 class="text-white text-center " style="padding-top: 50px; font-weight: bolder;">Learn and Share</h1>
+     
+    </div>
   </section>
 
   <!-- Content section -->
@@ -79,10 +89,18 @@
     </div>
   </div>
 
+   <!-- Image Section - set the background image for the header in the line below -->
+   <section class="bg-image-full" style="background-image: url('./img/grup.jpg'); ">
+    <!-- Put anything you want here! There is just a spacer below for demo purposes! -->
+    <div class=" layer" style="height: 300px; " >
+      <h1 class=" text-center " style=" color:rgb(0, 7, 65);padding-top: 140px; font-weight: bolder;">Bulawayo Pythonista's Community</h1>
+    </div>
+  </section>
+
   <!-- Footer -->
   <footer class="py-5 bg-light">
     <div class="container">
-      <p class="m-0 text-center " style="color: rgb(0, 7, 65);">Copyright &copy; Python Bulawayo 2020</p>
+      <p class="m-0 text-center " style="color: rgb(0, 7, 65);font-weight: 700;">Copyright &copy; Python Bulawayo 2020</p>
     </div>
     <!-- /.container -->
   </footer>
